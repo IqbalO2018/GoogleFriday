@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">	
+</script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		var noun1 = $("#noun1").val()
+		var verb1 = $("#adjective1").val()
+		var noun2 = $("#noun2").val()
+		var verb2 = $("#verb2").val()
+		var noun3 = $("#noun3").val()
+		var verb3 = $("#verb3").val()
+		var noun4 = $("#noun4").val()
+		var verb4 = $("#verb4").val()
+		var noun5 = $("#noun5").val()
+		var verb5 = $("#verb5").val()
+        var story = "The "+noun1+" in devil's lake was looking for some "+adjective1+" catfish to eat. The amounts of "+noun2+" the beast was looking for were impossible to find unless it started "+verb2+" to the mountain top. One bright morning the "+noun3+" made it's way "+verb3+" to the mountain top and grabbed on to a big old catfish and a small "+noun4+" to eat for breakfast."+verb4+" the "+noun5+" was so excited it "+verb5+" into happiness and flew as high as it can in the air. The end" 
+			$("#output").append(story);
+			
+	});
+
+});
+</script>
+</head>
+<body>
+
+<p>
+<h1>MadLibs!</h1>
+</p>
+<p id="output"></p>
+<input id="noun1" value = "noun1" type="text"></input>
+<input id="verb1" value = "verb1" type="text"></body>
+<input id="noun2" value = "noun2" type="text"></input>
+<input id="verb2" value = "verb2" type="text"></body>
+<input id="noun3" value = "noun3" type="text"></input>
+<input id="verb3" value = "verb3" type="text"></body>
+<input id="noun4" value = "noun4" type="text"></input>
+<input id="verb4" value = "verb4" type="text"></body>
+<input id="noun5" value = "noun5" type="text"></input>
+<input id="verb5" value = "verb5" type="text"></body>
+<button id="btn1">Create</button>
+
+</body>
+</html>
